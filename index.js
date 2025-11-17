@@ -24,7 +24,7 @@ async function startApp() {
         console.log(emailResult)
 
         const authResult = await AuthService.call('auth.authUser', {
-            username: newUser.username,
+            username: 'admin',
             password: 'password',
         })
 
